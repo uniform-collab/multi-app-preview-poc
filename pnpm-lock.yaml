@@ -1,59 +1,6 @@
 lockfileVersion: '6.0'
 
-settings:
-  autoInstallPeers: true
-  excludeLinksFromLockfile: false
-
 importers:
-
-  apps/app-main:
-    dependencies:
-      '@uniformdev/canvas':
-        specifier: ^19.103.0
-        version: 19.103.0
-      '@uniformdev/canvas-next':
-        specifier: ^19.103.0
-        version: 19.103.0(next@14.1.0)(react-dom@18.2.0)(react@18.2.0)
-      '@uniformdev/canvas-react':
-        specifier: ^19.103.0
-        version: 19.103.0(react-dom@18.2.0)(react@18.2.0)
-      next:
-        specifier: 14.1.0
-        version: 14.1.0(react-dom@18.2.0)(react@18.2.0)
-      react:
-        specifier: ^18
-        version: 18.2.0
-      react-dom:
-        specifier: ^18
-        version: 18.2.0(react@18.2.0)
-    devDependencies:
-      '@types/node':
-        specifier: ^20
-        version: 20.11.10
-      '@types/react':
-        specifier: ^18
-        version: 18.2.48
-      '@types/react-dom':
-        specifier: ^18
-        version: 18.2.18
-      autoprefixer:
-        specifier: ^10.0.1
-        version: 10.4.17(postcss@8.4.33)
-      eslint:
-        specifier: ^8
-        version: 8.56.0
-      eslint-config-next:
-        specifier: 14.1.0
-        version: 14.1.0(eslint@8.56.0)(typescript@5.3.3)
-      postcss:
-        specifier: ^8
-        version: 8.4.33
-      tailwindcss:
-        specifier: ^3.3.0
-        version: 3.4.1
-      typescript:
-        specifier: ^5
-        version: 5.3.3
 
   apps/app-orange:
     dependencies:
@@ -146,6 +93,55 @@ importers:
       postcss:
         specifier: ^8
         version: 8.4.33
+      tailwindcss:
+        specifier: ^3.3.0
+        version: 3.4.1
+      typescript:
+        specifier: ^5
+        version: 5.3.3
+
+  apps/app-root:
+    dependencies:
+      '@uniformdev/canvas':
+        specifier: ^19.103.0
+        version: 19.103.0
+      '@uniformdev/canvas-next':
+        specifier: ^19.103.0
+        version: 19.103.0(next@14.1.0)(react-dom@18.2.0)(react@18.2.0)
+      '@uniformdev/canvas-react':
+        specifier: ^19.103.0
+        version: 19.103.0(react-dom@18.2.0)(react@18.2.0)
+      next:
+        specifier: 14.1.0
+        version: 14.1.0(react-dom@18.2.0)(react@18.2.0)
+      react:
+        specifier: ^18
+        version: 18.2.0
+      react-dom:
+        specifier: ^18
+        version: 18.2.0(react@18.2.0)
+    devDependencies:
+      '@types/node':
+        specifier: ^20
+        version: 20.11.10
+      '@types/react':
+        specifier: ^18
+        version: 18.2.48
+      '@types/react-dom':
+        specifier: ^18
+        version: 18.2.18
+      autoprefixer:
+        specifier: ^10.0.1
+        version: 10.4.17(postcss@8.4.31)
+      eslint:
+        specifier: ^8
+        version: 8.56.0
+      eslint-config-next:
+        specifier: 14.1.0
+        version: 14.1.0(eslint@8.56.0)(typescript@5.3.3)
+      postcss:
+        specifier: ^8
+        version: 8.4.31
       tailwindcss:
         specifier: ^3.3.0
         version: 3.4.1
@@ -744,6 +740,22 @@ packages:
     resolution: {integrity: sha512-wwHYEIS0Q80f5mosx3L/dfG5t5rjEa9Ft51GTaNt862EnpyGHpgz2RkZvLPp1oF5TnAiTohkEKVEu8pQPJI7Vg==}
     dependencies:
       has-symbols: 1.0.3
+    dev: true
+
+  /autoprefixer@10.4.17(postcss@8.4.31):
+    resolution: {integrity: sha512-/cpVNRLSfhOtcGflT13P2794gVSgmPgTR+erw5ifnMLZb0UnSlkK4tquLmkd3BhA+nLo5tX8Cu0upUsGKvKbmg==}
+    engines: {node: ^10 || ^12 || >=14}
+    hasBin: true
+    peerDependencies:
+      postcss: ^8.1.0
+    dependencies:
+      browserslist: 4.22.3
+      caniuse-lite: 1.0.30001581
+      fraction.js: 4.3.7
+      normalize-range: 0.1.2
+      picocolors: 1.0.0
+      postcss: 8.4.31
+      postcss-value-parser: 4.2.0
     dev: true
 
   /autoprefixer@10.4.17(postcss@8.4.33):
@@ -2347,7 +2359,6 @@ packages:
       nanoid: 3.3.7
       picocolors: 1.0.0
       source-map-js: 1.0.2
-    dev: false
 
   /postcss@8.4.33:
     resolution: {integrity: sha512-Kkpbhhdjw2qQs2O2DGX+8m5OVqEcbB9HRBvuYM9pgrjEFUg30A9LmXNlTAUj4S9kgtGyrMbTzVjH7E+s5Re2yg==}
@@ -2975,3 +2986,7 @@ packages:
   /yocto-queue@0.1.0:
     resolution: {integrity: sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==}
     engines: {node: '>=10'}
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
