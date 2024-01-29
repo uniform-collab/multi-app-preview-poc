@@ -8,13 +8,14 @@ export const getServerSideProps = withUniformGetServerSideProps({
   modifyPath: (path) => {
     return `/app-orange${path}`;
   },
-  handleNotFound: (result, context) => {
-    return {
-      props: {
-        data: EMPTY_COMPOSITION,
-        previewDAta: context.previewData,
-      },
-    } as any;
+  handleComposition: (result, context, defaultHandler) => {
+    if (context.previewData?.isUniformContextualEditing) {
+      return {
+        props: { data: EMPTY_COMPOSITION },
+      };
+    }
+
+    return defaultHandler(result);
   },
 });
 

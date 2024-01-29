@@ -5,13 +5,14 @@ import "../components/canvasComponents";
 import Head from "next/head";
 
 export const getServerSideProps = withUniformGetServerSideProps({
-  handleNotFound: (result, context) => {
-    return {
-      props: {
-        data: EMPTY_COMPOSITION,
-        previewDAta: context.previewData,
-      },
-    } as any;
+  handleComposition: (result, context, defaultHandler) => {
+    if (context.previewData?.isUniformContextualEditing) {
+      return {
+        props: { data: EMPTY_COMPOSITION },
+      };
+    }
+
+    return defaultHandler(result);
   },
 });
 
