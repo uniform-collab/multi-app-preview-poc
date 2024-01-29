@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply p-64 text-center text-purple-500 font-serif;
+}
+h1 {
+  @apply text-6xl font-semibold;
+}
