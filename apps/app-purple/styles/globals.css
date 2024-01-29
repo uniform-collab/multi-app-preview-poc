@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
+main {
   @apply p-64 text-center text-purple-500 font-serif;
 }
 h1 {

@@ -1,0 +1,12 @@
+{
+  "rewrites": [
+    {
+      "source": "/orange-app/:match*",
+      "destination": "https://multi-app-preview-poc-app-orange.vercel.app/orange-app/:match*"
+    },
+    {
+      "source": "/purple-app/:match*",
+      "destination": "https://multi-app-preview-poc-app-purple.vercel.app/purple-app/:match*"
+    }
+  ]
+}
