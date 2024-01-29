@@ -4,7 +4,9 @@ import { UniformComposition, UniformSlot } from "@uniformdev/canvas-react";
 import "../components/canvasComponents";
 import Head from "next/head";
 
-export const getServerSideProps = withUniformGetServerSideProps({});
+export const getServerSideProps = withUniformGetServerSideProps({
+  modifyPath: (path) => `/app-purple${path}`,
+});
 
 export default function Page({
   data: composition,

@@ -1,5 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  basePath: "/app-purple",
   reactStrictMode: true,
   serverRuntimeConfig: {
     projectId: process.env.UNIFORM_PROJECT_ID,

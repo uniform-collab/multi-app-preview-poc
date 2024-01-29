@@ -1,5 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  basePath: "/app-orange",
   reactStrictMode: true,
   serverRuntimeConfig: {
     projectId: process.env.UNIFORM_PROJECT_ID,
