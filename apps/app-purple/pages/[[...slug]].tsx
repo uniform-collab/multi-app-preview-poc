@@ -21,10 +21,8 @@ export const getServerSideProps = withUniformGetServerSideProps({
 
 export default function Page({
   data: composition,
-  previewData,
 }: {
   data: RootComponentInstance;
-  previewData: any;
 }) {
   return (
     <>
@@ -35,7 +33,6 @@ export default function Page({
         <UniformComposition data={composition}>
           <UniformSlot name="content" />
         </UniformComposition>
-        previewData: <pre>{JSON.stringify(previewData)}</pre>
       </main>
     </>
   );

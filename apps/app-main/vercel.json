@@ -1,24 +1,20 @@
 {
   "rewrites": [
     {
-      "source": "/app-orange/:match*",
-      "destination": "https://multi-app-preview-poc-app-orange.vercel.app/app-orange/:match*"
-    },
-    {
       "source": "/app-orange",
       "destination": "https://multi-app-preview-poc-app-orange.vercel.app/app-orange"
     },
     {
-      "source": "/app-purple/:match*",
-      "destination": "https://multi-app-preview-poc-app-purple.vercel.app/app-purple/:match*"
+      "source": "/app-orange/:path*",
+      "destination": "https://multi-app-preview-poc-app-orange.vercel.app/app-orange/:path*"
     },
     {
       "source": "/app-purple",
       "destination": "https://multi-app-preview-poc-app-purple.vercel.app/app-purple"
     },
     {
-      "source": "/api/preview",
-      "destination": "https://multi-app-preview-poc-app-purple.vercel.app/app-purple/api/preview"
+      "source": "/app-purple/:path*",
+      "destination": "https://multi-app-preview-poc-app-purple.vercel.app/app-purple/:path*"
     }
   ]
 }

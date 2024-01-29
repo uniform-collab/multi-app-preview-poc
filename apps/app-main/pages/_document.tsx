@@ -5,7 +5,7 @@ export default function Document() {
     <Html lang="en">
       <Head />
       <body>
-        <pre>Rendered by: app-root</pre>
+        <pre>Rendered by: app-main</pre>
         <Main />
         <NextScript />
       </body>
