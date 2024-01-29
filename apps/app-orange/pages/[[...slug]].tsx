@@ -1,5 +1,5 @@
 import { RootComponentInstance } from "@uniformdev/canvas";
-import { withUniformGetServerSideProps } from "@uniformdev/canvas-next/route";
+import { withUniformGetServerSideProps } from "@uniformdev/canvas-next/project-map";
 import { UniformComposition, UniformSlot } from "@uniformdev/canvas-react";
 import "../components/canvasComponents";
 import Head from "next/head";
